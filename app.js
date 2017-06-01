@@ -31,7 +31,7 @@
 
     		$http.get(url).then(function (response) {
           vm.pokemon = response.data
-          console.log(vm.pokemon);
+          
           vm.pokeImage = vm.pokemon.sprites['front_default']
           vm.pokeName = vm.pokemon.name
         })
